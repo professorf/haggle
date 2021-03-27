@@ -2,8 +2,8 @@
 
 **Instructions**. *Click on a task:* 
 
-[Calculate Total Cost]()
+[Calculate Total Cost](calculateTotal.html)
 
-[Determine Discount]()
+[Determine Discount](determineDiscount.html)
 
-[Get New Price of Deal]()
+[Get New Price of Deal](getNewPrice.html)
