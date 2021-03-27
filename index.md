@@ -2,7 +2,7 @@
 
 **Instructions**. *Click on a task:* 
 
-[Calculate Final Cost]()
+[Calculate Total Cost]()
 
 [Determine Discount]()
 
