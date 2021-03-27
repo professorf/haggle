@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function calcTotalCost(AskingPrice, SalesTaxRate) {
+    SalesTax   = AskingPrice * SalesTaxRate
+    GrossPrice = AskingPrice + SalesTax
+    return GrossPrice
+}
+function doTotalCost() {
+    Price=parseFloat(txPrice.value)
+    SalesTax=parseFloat(txSalesTax.value)/100
+    Total = calcTotalCost(Price, SalesTax)
+    spTotal.innerHTML=Total.toFixed(2)
+}
+</script>
+</head>
+<body>
+<h1>Calculate Total Cost</h1>
+Price: <input id="txPrice"><br>
+Sales Tax: <input id="txSalesTax">%<br>
+<input type="button" value="Calc" onClick="doTotalCost()"><br>
+Total: $<span id="spTotal"></span><br>
+<a href="index.html">HOME</a>
+</body>
+</html>

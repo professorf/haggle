@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function getNewPrice(OriginalPrice, Discount) {
+    Savings=OriginalPrice*Discount
+    NewPrice=OriginalPrice-Savings
+    return NewPrice
+}
+function doNewPrice() {
+    Original = parseFloat(txOriginal.value)
+    Discount = parseFloat(txDiscount.value)/100
+    NewPrice = getNewPrice(Original, Discount)
+    spNewPrice.innerHTML = NewPrice.toFixed(2)
+}
+</script>
+</head>
+<body>
+<h1>Get New Price</h1>
+Original Price: <input id="txOriginal"><br>
+Discount: <input id="txDiscount">%<br>
+<input type="button" value="Calc" onClick="doNewPrice()"><br>
+New Price: $<span id="spNewPrice"></span><br>
+<a href="index.html">HOME</a>
+</body>
+</html>

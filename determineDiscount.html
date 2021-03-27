@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function determineDiscount(OriginalPrice, OfferPrice) {
+    Savings  = OriginalPrice-OfferPrice
+    Discount = Savings/OriginalPrice
+    return Discount
+}
+function doDiscount() {
+    Original=parseFloat(txOriginal.value)
+    Offer=parseFloat(txOffer.value)
+    Discount = determineDiscount(Original, Offer)
+    spDiscount.innerHTML=(Discount*100).toFixed(2)
+}
+</script>
+</head>
+<body>
+<h1>Determine Discount</h1>
+Original Price: <input id="txOriginal"><br>
+Offer Price: <input id="txOffer"><br>
+<input type="button" value="Calc" onClick="doDiscount()"><br>
+Discount: <span id="spDiscount"></span>%<br>
+<a href="index.html">HOME</a>
+</body>
+</html>
